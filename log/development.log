@@ -1,0 +1,273 @@
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:00:34 -0500
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/cyber_twin_dragon/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/cyber_twin_dragon/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.5ms | Allocations: 438)
+Completed 200 OK in 35ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 3562)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:01:16 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReactPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering react_pages/index.html.erb within layouts/application
+  Rendered react_pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 217)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 96f5f0f54c91abb51b37
+Version: webpack 4.46.0
+Time: 1944ms
+Built at: 11/22/2021 11:01:20 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-82716d8e5f0d6a41d5a9.js    125 KiB  application  [emitted] [immutable]  application
+js/application-82716d8e5f0d6a41d5a9.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-82716d8e5f0d6a41d5a9.js js/application-82716d8e5f0d6a41d5a9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../../../frontend' in '/home/cyber_twin_dragon/web_applications/CS5356-Repo/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 9:0-27
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4357.6ms | Allocations: 19423)
+Completed 500 Internal Server Error in 4390ms (ActiveRecord: 0.0ms | Allocations: 21914)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /home/cyber_twin_dragon/web_applications/CS5356-Repo/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-82716d8e5f0d6a41d5a9.js",
+  "application.js.map": "/packs/js/application-82716d8e5f0d6a41d5a9.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-82716d8e5f0d6a41d5a9.js"
+      ],
+      "js.map": [
+        "/packs/js/application-82716d8e5f0d6a41d5a9.js.map"
+      ]
+    }
+  }
+}
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= javascript_pack_tag 'hello_react', 'data-turbolinks-track': 'reload' %>
+    15:   </body>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:03:26 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReactPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering react_pages/index.html.erb within layouts/application
+  Rendered react_pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 217)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 7809)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 10300)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /home/cyber_twin_dragon/web_applications/CS5356-Repo/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-82716d8e5f0d6a41d5a9.js",
+  "application.js.map": "/packs/js/application-82716d8e5f0d6a41d5a9.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-82716d8e5f0d6a41d5a9.js"
+      ],
+      "js.map": [
+        "/packs/js/application-82716d8e5f0d6a41d5a9.js.map"
+      ]
+    }
+  }
+}
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14: 	<%= javascript_pack_tag 'hello_react' %>
+    15:   </body>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:04:00 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReactPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering react_pages/index.html.erb within layouts/application
+  Rendered react_pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 217)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f8db25f2c3cb465c9a21
+Version: webpack 4.46.0
+Time: 897ms
+Built at: 11/22/2021 11:04:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a05bc1ca07f08be6af21.js    125 KiB  application  [emitted] [immutable]  application
+js/application-a05bc1ca07f08be6af21.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a05bc1ca07f08be6af21.js js/application-a05bc1ca07f08be6af21.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 522 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../../../frontend/*' in '/home/cyber_twin_dragon/web_applications/CS5356-Repo/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 9:0-29
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2369.5ms | Allocations: 8999)
+Completed 500 Internal Server Error in 2381ms (ActiveRecord: 0.0ms | Allocations: 11490)
+
+
+  
+ActionView::Template::Error (Webpacker can't find hello_react.js in /home/cyber_twin_dragon/web_applications/CS5356-Repo/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-a05bc1ca07f08be6af21.js",
+  "application.js.map": "/packs/js/application-a05bc1ca07f08be6af21.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-a05bc1ca07f08be6af21.js"
+      ],
+      "js.map": [
+        "/packs/js/application-a05bc1ca07f08be6af21.js.map"
+      ]
+    }
+  }
+}
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14: 	<%= javascript_pack_tag 'hello_react' %>
+    15:   </body>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:05:40 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReactPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering react_pages/index.html.erb within layouts/application
+  Rendered react_pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 217)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cyber_twin_dragon/web_applications/CS5356-Repo/public/packs
+[Webpacker] Hash: a27b98b2af7bc48a938d
+Version: webpack 4.46.0
+Time: 4730ms
+Built at: 11/22/2021 11:05:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-42ed4d59538d9c8290f0.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-42ed4d59538d9c8290f0.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-42ed4d59538d9c8290f0.js js/hello_react-42ed4d59538d9c8290f0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6116.6ms | Allocations: 8041)
+Completed 200 OK in 6127ms (Views: 6118.8ms | ActiveRecord: 0.0ms | Allocations: 10565)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:06:49 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReactPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering react_pages/index.html.erb within layouts/application
+  Rendered react_pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 217)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cyber_twin_dragon/web_applications/CS5356-Repo/public/packs
+[Webpacker] Hash: 4efc22a87cece7654b6e
+Version: webpack 4.46.0
+Time: 1455ms
+Built at: 11/22/2021 11:06:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-5c43c6aa7d82dc2cc03b.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-5c43c6aa7d82dc2cc03b.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-5c43c6aa7d82dc2cc03b.js js/hello_react-5c43c6aa7d82dc2cc03b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2841.4ms | Allocations: 8014)
+Completed 200 OK in 2852ms (Views: 2844.5ms | ActiveRecord: 0.0ms | Allocations: 10595)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-22 23:09:25 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReactPagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering react_pages/index.html.erb within layouts/application
+  Rendered react_pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 217)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cyber_twin_dragon/web_applications/CS5356-Repo/public/packs
+[Webpacker] Hash: 2c21054c3fec580120f6
+Version: webpack 4.46.0
+Time: 1457ms
+Built at: 11/22/2021 11:09:28 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-4acf08e74577b870d0fb.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-4acf08e74577b870d0fb.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint hello_react = js/hello_react-4acf08e74577b870d0fb.js js/hello_react-4acf08e74577b870d0fb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.1 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2872.2ms | Allocations: 8014)
+Completed 200 OK in 2882ms (Views: 2874.3ms | ActiveRecord: 0.0ms | Allocations: 10595)
+
+
